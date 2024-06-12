@@ -1,0 +1,96 @@
+.services {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .services-header {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .services-header h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+  }
+  
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .service-text-left, .service-text-right {
+    width: 45%;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-text-left h3, .service-text-right h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-text-left p, .service-text-right p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-text-left a, .service-text-right a {
+    font-size: 1rem;
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .service-image-left, .service-image-right {
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .service-image-left img, .service-image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .service-image-right {
+    order: 2;
+  }
+  
+  .service-text-left {
+    order: 1;
+  }
+  
+  .service-image-left {
+    order: 3;
+  }
+  
+  .service-text-right {
+    order: 4;
+  }
+  
+  @media (max-width: 768px) {
+    .services-content {
+      gap: 2rem;
+    }
+  
+    .service {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .service-text-left, .service-text-right, .service-image-left, .service-image-right {
+      width: 100%;
+    }
+  
+    .service-text-left, .service-text-right {
+      order: initial;
+    }
+  }
+  

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  width: 100%;
+  position: fixed; /* Ensure the navbar stays at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  border-bottom: 2px solid green;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  color: #4CAF50; /* Adjust color as needed */
+}
+
+.navbar-info {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-info li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #4CAF50; /* Adjust color as needed */
+}
+
+.navbar-info li i {
+  margin-right: 0.5rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-menu li {
+  margin-left: 2rem;
+}
+
+.navbar-menu li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-toggle {
+  display: none; /* Hidden by default */
+  align-items: center;
+  cursor: pointer;
+  color: #4CAF50; /* Adjust color as needed */
+}
+
+.navbar-toggle span {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-toggle-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-toggle-icon span {
+  height: 3px;
+  width: 25px;
+  background-color: #4CAF50; /* Adjust color as needed */
+  margin: 2px;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
